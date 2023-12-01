@@ -1,0 +1,16 @@
+#!/usr/bin/env fish
+
+set rust_dir /opt/rust
+
+# Make the assumption that if the directory exists we don't need to do anything
+if not test -d $rust_dir
+    sudo mkdir $rust_dir
+    sudo chown megan:admin $rust_dir
+
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | \
+        sh -s -- --no-modify-path -y -q
+
+    rustup -q toolchain install nightly --allow-downgrade
+else
+    echo "Remove $rust_dir to reinstall rust"
+end
