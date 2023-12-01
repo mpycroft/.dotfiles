@@ -18,6 +18,7 @@ cask "visual-studio-code"
 
 # General programs
 cask "1password"
+cask "bettertouchtool"
 cask "discord"
 tap "nextfire/tap"
 brew "nextfire/tap/apple-music-discord-rpc", restart_service: :changed
