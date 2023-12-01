@@ -1,0 +1,42 @@
+add_newline = false
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_commit\
+$git_state\
+$git_status
+$character"""
+
+[username]
+style_user = "#f567e4"
+style_root = "bold #ff2424"
+
+[hostname]
+style = "#2b9e60"
+
+[directory]
+style = "#df92f0"
+read_only = " "
+truncation_symbol = "…/"
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+style = "#2cde70"
+symbol = " "
+
+[git_commit]
+style = "#45a6de"
+
+[git_state]
+format = '[\($state( $progress_current/$progress_total)\)]($style) '
+style = "#e8e06d"
+
+[git_status]
+style = "#fc6262"
+
+[character]
+success_symbol = "[❯](#38ff6d)"
+error_symbol = "[❯](#ff3838)"
