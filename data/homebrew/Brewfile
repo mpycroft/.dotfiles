@@ -5,6 +5,7 @@ brew "lsd"
 brew "neovim"
 brew "openssh"
 brew "ripgrep"
+brew "starship"
 
 # Development programs
 tap "homebrew/cask-fonts"
