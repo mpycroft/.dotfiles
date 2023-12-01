@@ -2,6 +2,7 @@
 brew "fd"
 brew "git"
 brew "lsd"
+brew "neovim"
 brew "openssh"
 brew "ripgrep"
 
