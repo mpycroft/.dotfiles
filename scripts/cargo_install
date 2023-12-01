@@ -1,0 +1,6 @@
+#!/usr/bin/env fish
+
+for package in (cat data/cargo/install | string match -r '^[[:alpha:]_-]+')
+    echo "Installing $package"
+    cargo install -q $package
+end
