@@ -1,3 +1,7 @@
+# Ignore everything but the config file in the ssh directory.
+config/ssh
+
+
 # General
 .DS_Store
 .AppleDouble
