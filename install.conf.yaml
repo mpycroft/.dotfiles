@@ -17,6 +17,7 @@
 - shell:
       - [scripts/install_fisher, Install Fisher and plugins]
       - [scripts/fix_fzf_bat, Fix fzf invocation of bat]
+      - [scripts/install_rust, Install Rust]
 
 # For some reason man function won't overwrite normal man from fisher directory.
 - link:
