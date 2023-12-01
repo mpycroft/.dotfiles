@@ -6,6 +6,8 @@ config/iterm2
 # generate fully qualified paths on first run.
 config/fish/fish_variables
 
+config/fish/functions/man.fish
+config/fisher
 
 # General
 .DS_Store
