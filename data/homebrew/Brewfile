@@ -1,5 +1,6 @@
 # Command line tools
 brew "fd"
+brew "git"
 brew "lsd"
 brew "openssh"
 brew "ripgrep"

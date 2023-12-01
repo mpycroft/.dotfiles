@@ -5,6 +5,7 @@
 - clean: ["~"]
 
 - link:
+      ~/.config: config
       ~/.ssh: config/ssh
 
 - brewfile:
