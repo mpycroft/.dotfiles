@@ -1,4 +1,11 @@
+- defaults:
+      link:
+          relink: true
+
 - clean: ["~"]
+
+- link:
+      ~/.ssh: config/ssh
 
 - brewfile:
       - data/homebrew/Brewfile --no-lock
