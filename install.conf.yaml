@@ -25,3 +25,8 @@
 # For some reason man function won't overwrite normal man from fisher directory.
 - link:
       ~/.config/fish/functions/man.fish: config/fisher/functions/man.fish
+
+# Handle App Store programs separately due to Xcode being rather big and needing
+# to accept its license to do any build related tasks.
+- brewfile:
+      - data/homebrew/Brewfile-appstore --no-lock

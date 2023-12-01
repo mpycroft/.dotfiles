@@ -18,6 +18,7 @@ cask "iterm2"
 cask "visual-studio-code"
 
 # General programs
+brew "mas"
 cask "1password"
 cask "bettertouchtool"
 cask "discord"

@@ -19,6 +19,7 @@ When run the install file will perform the following actions:
 * Install cargo packages
 * Add entries to /etc/paths file
 * Change shell to [Fish](https://fishshell.com)
+* Install App Store programs
 
 ## Structure
 
