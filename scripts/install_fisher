@@ -1,0 +1,13 @@
+#!/usr/bin/env fish
+
+# Grab Fisher and use it to install all the plugins stored in fish_plugins,
+# assume that if the directory exists we don't need to do anything
+
+set fisher_dir config/fisher
+
+if not test -d $fisher_dir
+    curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish \
+        | source && fisher install <config/fish/fish_plugins
+else
+    echo "Delete $fisher_dir in order to reinstall Fisher and plugins"
+end
