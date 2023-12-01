@@ -10,6 +10,7 @@ brew "ripgrep"
 brew "actionlint"
 tap "homebrew/cask-fonts"
 cask "font-fira-code-nerd-font"
+cask "iterm2"
 cask "visual-studio-code"
 
 # General programs
