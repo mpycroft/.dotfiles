@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+
+# The fzf plugin for fish likes to put line numbers when invoking bat for
+# displaying files without a way to config it.
+
+sed -i "" -e "s/--style=numbers //" \
+    config/fisher/functions/_fzf_preview_file.fish

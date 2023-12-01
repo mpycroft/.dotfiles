@@ -2,6 +2,7 @@
 brew "bat"
 brew "fd"
 brew "fish"
+brew "fzf"
 brew "git"
 brew "lsd"
 brew "neovim"
