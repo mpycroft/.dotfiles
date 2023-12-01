@@ -1,0 +1,14 @@
+# Command line tools
+brew "fd"
+brew "lsd"
+brew "ripgrep"
+
+# Development programs
+brew "actionlint"
+tap "homebrew/cask-fonts"
+cask "font-fira-code-nerd-font"
+cask "visual-studio-code"
+
+# General programs
+cask "1password"
+cask "discord"

@@ -1,1 +1,4 @@
 - clean: ["~"]
+
+- brewfile:
+      - data/homebrew/Brewfile --no-lock
