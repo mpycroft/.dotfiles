@@ -2,6 +2,10 @@
 config/ssh
 config/iterm2
 
+# Don't store the fish variables files in version control since we need to
+# generate fully qualified paths on first run.
+config/fish/fish_variables
+
 
 # General
 .DS_Store
