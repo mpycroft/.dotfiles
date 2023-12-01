@@ -1,5 +1,6 @@
-# Ignore everything but the config file in the ssh directory.
+# Ignore everything but the config file in these directories.
 config/ssh
+config/iterm2
 
 
 # General
