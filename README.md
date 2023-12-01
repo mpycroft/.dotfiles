@@ -14,6 +14,7 @@ When run the install file will perform the following actions:
 * Clean links in the home directory
 * Link configuration files into the home directory
 * Install [Homebrew](https://brew.sh) and packages listed in the Brewfile
+* Install [Fisher](https://github.com/jorgebucaran/fisher) and packages
 
 ## Structure
 
@@ -21,6 +22,7 @@ Files are split into a few different directories for easier organisation.
 
 * config - Configuration files
 * data - Contains data used during installation
+* scripts - Executable scripts for commands not supported by dotbot
 
 ## Installation
 

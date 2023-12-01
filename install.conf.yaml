@@ -1,6 +1,9 @@
 - defaults:
       link:
           relink: true
+      shell:
+          stdout: true
+          stderr: true
 
 - clean: ["~"]
 
@@ -10,3 +13,10 @@
 
 - brewfile:
       - data/homebrew/Brewfile --no-lock
+
+- shell:
+      - [scripts/install_fisher, Install Fisher and plugins]
+
+# For some reason man function won't overwrite normal man from fisher directory.
+- link:
+      ~/.config/fish/functions/man.fish: config/fisher/functions/man.fish
