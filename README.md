@@ -18,6 +18,7 @@ When run the install file will perform the following actions:
 * Install [Rust](https://www.rust-lang.org)
 * Install cargo packages
 * Add entries to /etc/paths file
+* Change shell to [Fish](https://fishshell.com)
 
 ## Structure
 
