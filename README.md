@@ -15,6 +15,7 @@ When run the install file will perform the following actions:
 * Link configuration files into the home directory
 * Install [Homebrew](https://brew.sh) and packages listed in the Brewfile
 * Install [Fisher](https://github.com/jorgebucaran/fisher) and packages
+* Install [Rust](https://www.rust-lang.org)
 
 ## Structure
 
