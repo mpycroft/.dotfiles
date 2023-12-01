@@ -1,0 +1,18 @@
+#!/usr/bin/env fish
+
+set fish_bin $HOMEBREW_BIN/fish
+set shells_file /etc/shells
+
+if not rg -q $fish_bin $shells_file
+    echo $fish_bin | sudo tee -a $shells_file >/dev/null
+else
+    echo "$fish_bin already in $shells_file"
+end
+
+# There isn't a great way to test this across all variety of shells, this should
+# work for general usage though.
+if test $SHELL != $fish_bin
+    chsh -s $fish_bin
+else
+    echo "\$SHELL already set to $fish_bin"
+end
