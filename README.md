@@ -17,6 +17,7 @@ When run the install file will perform the following actions:
 * Install [Fisher](https://github.com/jorgebucaran/fisher) and packages
 * Install [Rust](https://www.rust-lang.org)
 * Install cargo packages
+* Add entries to /etc/paths file
 
 ## Structure
 
