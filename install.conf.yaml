@@ -19,6 +19,7 @@
       - [scripts/fix_fzf_bat, Fix fzf invocation of bat]
       - [scripts/install_rust, Install Rust]
       - [scripts/cargo_install, Install Cargo packages]
+      - [scripts/add_paths, Add entries to paths file]
 
 # For some reason man function won't overwrite normal man from fisher directory.
 - link:

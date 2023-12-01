@@ -1,0 +1,18 @@
+#!/usr/bin/env fish
+
+# Configure paths file so that applications that aren't launched from the
+# terminal can still access Homebrew and Rust.
+
+set paths /etc/paths
+
+function add_path
+    if not rg -q $argv $paths
+        sudo sed -i "" -e "1s#^#$argv\n#" $paths
+    else
+        echo "$argv already in $paths"
+    end
+end
+
+add_path $HOMEBREW_DIR/sbin
+add_path $HOMEBREW_BIN
+add_path /opt/rust/cargo/bin
