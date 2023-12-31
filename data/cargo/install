@@ -5,14 +5,18 @@ cargo-edit v0.12.2:
     cargo-rm
     cargo-set-version
     cargo-upgrade
-cargo-expand v1.0.74:
+cargo-expand v1.0.78:
     cargo-expand
+cargo-instruments v0.4.9:
+    cargo-instruments
 cargo-license v0.5.1:
     cargo-license
-cargo-show-asm v0.2.23:
+cargo-show-asm v0.2.25:
     cargo-asm
 cargo-sort v1.0.9:
     cargo-sort
+cargo-tarpaulin v0.27.2:
+    cargo-tarpaulin
 cargo-update v13.3.0:
     cargo-install-update
     cargo-install-update-config
