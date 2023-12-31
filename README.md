@@ -29,6 +29,25 @@ Files are split into a few different directories for easier organisation.
 * data - Contains data used during installation
 * scripts - Executable scripts for commands not supported by dotbot
 
+### Generating Data Files
+
+The cargo install file is simply created by running
+
+```shell
+cargo install --list > data/cargo/install
+```
+
+and in the install scripts we only look at the top level crate name and ignore
+versions.
+
+Data for Homebrew is created by running
+
+```shell
+brew bundle dump
+```
+
+and manually editing as needed.
+
 ## Installation
 
 The Xcode Command Line Tools need to be installed before cloning and installing
@@ -45,3 +64,9 @@ cd ~
 git clone https://github.com/mpycroft/.dotfiles.git
 .dotfiles/install
 ```
+
+## Notes
+
+Xcode is installed as the last item in the final Brewfile as it requires
+accepting its license (separate to the Command Line Tools license) before any
+build related tasks can be performed.
